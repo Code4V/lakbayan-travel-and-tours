@@ -82,6 +82,14 @@
   margin-left: -40%;
 }
 
+#btn4:checked ~ .first {
+  margin-left: -60%;
+}
+
+#btn5:checked ~ .first {
+  margin-left: -80%;
+}
+
 .nav-auto {
   position: absolute;
   display: flex;
@@ -116,4 +124,32 @@
 
 #btn3:checked ~ .nav-auto .auto-btn3 {
   background: var(--first-color);
+}
+
+#btn4:checked ~ .nav-auto .auto-btn4 {
+  background: var(--first-color);
+}
+
+#btn5:checked ~ .nav-auto .auto-btn5 {
+  background: var(--first-color);
+}
+
+@media (max-width: 480px) { 
+  .slider, .slider img, .nav-manual, .nav-auto {
+    /* width: 380px !important; */
+    width: 90vw !important;
+  }
+
+  .slider, .slider img {
+    height: 333px !important;
+  }
+
+  .nav-auto {
+    margin-top: 299px !important;
+  }
+
+  .nav-manual {
+    margin-top: -380px !important;
+  }
+
 }

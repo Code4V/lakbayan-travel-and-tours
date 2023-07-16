@@ -22,8 +22,8 @@
 
 <body>
   <?php 
-    include 'includes/components/nav.php';
-    include 'includes/components/accountModal.php';
+    include __DIR__.'/includes/components/nav.php';
+    include __DIR__.'/includes/components/accountModal.php';
   ?>
   <section class="sections destinations" id="destinations">
     <div class="banner-half">
@@ -167,6 +167,21 @@
       });
     });
   </script>
+  <!-- <script>
+    // Mobile Onclick
+    var wrap = document.querySelectorAll(".wrap");
+    wrap.forEach(element => {
+      
+      element.addEventListener('click', () => {
+        wrap.forEach(e => { 
+          e.lastElementChild.style.opacity = "0";
+        });
+        var target = element.lastElementChild;
+        target.style.opacity = "1";
+      })
+    });
+  </script> -->
+
 </body>
 
 </html>
